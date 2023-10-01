@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Development</title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+
+<body>
+  <h1>Development</h1>
+
+
+  <form action="/development" method="POST" class="buttons
+  ">
+    <button type="submit" value="front" name="choice">
+      <p>Front End</p>
+    </button>
+    <button type="submit" value="back" name="choice">
+      <p>Back End</p>
+    </button>
+    <button type="submit" value="full" name="choice">
+      <p>Full Stack</p>
+    </button>
+  </form>
+  <div id="developmentContainer" class="hidden">
+    <%if (locals.development) {%>
+
+      <h2 id="developmentTitle">
+        <%= development.name %>
+      </h2>
+
+      <h3>Description:</h3>
+      <ul id="developmentList">
+          <li>
+            <%= development.name %>
+          </li>
+          <li>
+            <%= development.description %>
+          </li>
+      </ul>
+
+      <%} else {%>
+        <h2>Pick your interest</h2>
+        <%}%>
+  </div>
+</body>
+
+</html>

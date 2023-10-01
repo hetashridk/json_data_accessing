@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #88b2d9;
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  font-size: 5rem;
+  text-align: center;
+  color: #88b2d9;
+  background-color: white;
+}
+
+h2 {
+  color: #88b2d9;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  font-size: 5rem;
+}
+
+.buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#developmentContainer {
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#developmentTitle {
+  color: #88b2d9;
+}
+
+#developmentList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#developmentList li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+p{
+  font-size: 2rem;
+}
